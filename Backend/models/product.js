@@ -15,6 +15,14 @@ const ProductSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    asset_no: {
+      type: String,
+      required: true,
+    },
+    Parent_no: {
+      type: String,
+      required: true,
+    },
     stock: {
       type: Number,
       required: true,

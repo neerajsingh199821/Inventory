@@ -11,6 +11,8 @@ const addProduct = (req, res) => {
     manufacturer: req.body.manufacturer,
     stock: 0,
     description: req.body.description,
+    asset_no: req.body.asset_no,
+    Parent_no: req.body.Parent_no
   });
 
   addProduct

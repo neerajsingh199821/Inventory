@@ -219,11 +219,20 @@ function Inventory() {
           <table className="min-w-full divide-y-2 divide-gray-200 text-sm">
             <thead>
               <tr>
+              <th className="whitespace-nowrap px-4 py-2 text-left font-medium text-gray-900">
+                  Parent_no
+                </th>
+                <th className="whitespace-nowrap px-4 py-2 text-left font-medium text-gray-900">
+                  Asset_no
+                </th>
                 <th className="whitespace-nowrap px-4 py-2 text-left font-medium text-gray-900">
                   Products
                 </th>
                 <th className="whitespace-nowrap px-4 py-2 text-left font-medium text-gray-900">
                   Manufacturer
+                </th>
+                <th className="whitespace-nowrap px-4 py-2 text-left font-medium text-gray-900">
+                  Supplier
                 </th>
                 <th className="whitespace-nowrap px-4 py-2 text-left font-medium text-gray-900">
                   Stock
@@ -244,11 +253,20 @@ function Inventory() {
               {products.map((element, index) => {
                 return (
                   <tr key={element._id}>
+                    <td className="whitespace-nowrap px-4 py-2 text-gray-700">
+                      {element.Parent_no}
+                    </td>
+                    <td className="whitespace-nowrap px-4 py-2 text-gray-700">
+                      {element.asset_no}
+                    </td>
                     <td className="whitespace-nowrap px-4 py-2  text-gray-900">
                       {element.name}
                     </td>
                     <td className="whitespace-nowrap px-4 py-2 text-gray-700">
                       {element.manufacturer}
+                    </td>
+                    <td className="whitespace-nowrap px-4 py-2 text-gray-700">
+                      {element.Supplier}
                     </td>
                     <td className="whitespace-nowrap px-4 py-2 text-gray-700">
                       {element.stock}
